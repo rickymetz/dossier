@@ -1,0 +1,17 @@
+.contain-to-grid.fixed
+    nav.top-bar(data-topbar='', role='navigation')
+        ul.title-area
+            li.name
+                h1
+                    a(href='#') Dossier
+            li.toggle-topbar.menu-icon
+                a(href='#')
+                    span 
+        section.top-bar-section
+            // Right Nav Section
+            ul.right
+                li.active
+                    a(href='#', data-reveal-id='addContactModal')
+                        i.fa.fa-plus.fa-lg
+                            |  Add Contact
+                        include addcontactmodal
