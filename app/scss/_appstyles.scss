@@ -2,3 +2,44 @@
 
 @import "compass/css3";
 @import "compass/utilities";
+
+// Menu bar
+$menubar-height: 4em;
+$menu-button-height: $menubar-height/4;
+
+.menubar{
+	height: $menubar-height;
+	background-color: white;
+}
+.menu-button{
+	@include button;
+	padding: $menu-button-height $menu-button-height;
+	height: $menubar-height;
+	width: $menubar-height;
+	margin: 0 0;
+	& i{
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+}
+
+// Sort Options
+.sortoptions a{
+	color: grey;
+	margin-left: 1em;
+}
+.sortoptions .active{
+	border-bottom: 1px solid grey;
+}
+
+// contact list
+#container .contactentry{
+	max-width: 150px;
+	background-color: pink;
+	min-height: 275px;
+	float: left;
+	margin-bottom: 10px;
+}

@@ -447,7 +447,7 @@ body {
 }
 
 body {
-  background: white;
+  background: #f9f9f9;
   color: #222222;
   padding: 0;
   margin: 0;
@@ -8037,3 +8037,69 @@ th.hide-for-touch {
   }
 }
 /* all app scss styles here */
+.menubar {
+  height: 4em;
+  background-color: white;
+}
+
+.menu-button {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #008cba;
+  border-color: #007095;
+  color: white;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  transition: background-color 1s;
+  padding: 1em 1em;
+  height: 4em;
+  width: 4em;
+  margin: 0 0;
+}
+.menu-button:hover, .menu-button:focus {
+  background-color: #007095;
+}
+.menu-button:hover, .menu-button:focus {
+  color: white;
+}
+.menu-button i {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.sortoptions a {
+  color: grey;
+  margin-left: 1em;
+}
+
+.sortoptions .active {
+  border-bottom: 1px solid grey;
+}
+
+#container .contactentry {
+  max-width: 150px;
+  background-color: pink;
+  min-height: 275px;
+  float: left;
+  margin-bottom: 10px;
+}

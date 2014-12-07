@@ -1,0 +1,19 @@
+div.row
+    div.small-6.medium-6.large-6.columns
+        div(data-dropdown='drop1', aria-controls='drop1', aria-expanded='false')
+            i.fa.fa-tags.fa-lg
+            ul#drop1.f-dropdown(data-dropdown-content='', aria-hidden='true', tabindex='-1')
+                li
+                    a(href='#') Family
+                li
+                    a(href='#') Friends
+                li
+                    a(href='#') Work
+    div.small-6.medium-6.large-6.columns.text-right.sortoptions
+        p 
+            | Sort by:
+            a.active(href='#') Name
+            | 
+            a(href='#') Date
+            | 
+            a(href='#') Last Updated

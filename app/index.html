@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation project</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- build:css css/libraries.min.css-->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <!-- bower:css-->
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
     <!-- endbower-->
     <!-- endbuild-->
     <!-- build:css css/app.min.css-->
@@ -29,99 +31,305 @@
         <section class="top-bar-section">
           <!-- Right Nav Section-->
           <ul class="right">
-            <li class="active"><a href="#" data-reveal-id="addContactModal"><i class="fa fa-plus fa-lg"> Add Contact</i>
-                <div id="addContactModal" data-reveal="" class="reveal-modal"></div>
-                <form>
-                  <div class="row">
-                    <div class="large-12 columns">
-                      <label>Input Label
-                        <input type="text" placeholder="large-12.columns">
-                      </label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="large-4 columns">
-                      <label>Input Label
-                        <input type="text" placeholder="large-4.columns">
-                      </label>
-                    </div>
-                    <div class="large-4 columns">
-                      <label>Input Label
-                        <input type="text" placeholder="large-4.columns">
-                      </label>
-                    </div>
-                    <div class="large-4 columns">
-                      <div class="row collapse">
-                        <label>Input Label</label>
-                        <div class="small-9 columns">
-                          <input type="text" placeholder="small-9.columns">
-                        </div>
-                        <div class="small-3 columns"><span class="postfix">.com</span></div>
+            <li class="active"><a href="#" data-reveal-id="addContactModal"><i class="fa fa-plus fa-lg"></i>
+                <div id="addContactModal" data-reveal="" class="reveal-modal full">
+                  <form>
+                    <div class="row">
+                      <div class="small-12 columns">
+                        <h1>Add a Contact</h1>
+                        <hr>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="large-12 columns">
-                      <label>Select Box
-                        <select>
-                          <option value="husker">Husker</option>
-                          <option value="starbuck">Starbuck</option>
-                          <option value="hotdog">Hot Dog</option>
-                          <option value="apollo">Apollo</option>
-                        </select>
-                      </label>
+                    <div class="row">
+                      <div class="large-12">
+                        <div class="row">
+                          <div class="large-6 columns">
+                            <label>First Name
+                              <input type="text" placeholder="First Name">
+                            </label>
+                          </div>
+                          <div class="large-6 columns">
+                            <label>Last Name
+                              <input type="text" placeholder="Last Name">
+                            </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="large-12 columns">
+                            <label>Textarea Label
+                              <textarea placeholder="small-12.columns"></textarea>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="large-12 columns">
+                            <label>Textarea Label
+                              <textarea placeholder="small-12.columns"></textarea>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="large-12 columns">
+                            <label>Textarea Label
+                              <textarea placeholder="small-12.columns"></textarea>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="large-12 columns">
+                            <label>Textarea Label
+                              <textarea placeholder="small-12.columns"></textarea>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="large-6 columns">
-                      <label>Choose Your Favorite</label>
-                      <input id="pokemonRed" type="radio" name="pokemon" value="Red">
-                      <label for="pokemonRed">Red</label>
-                      <input id="pokemonBlue" type="radio" name="pokemon" value="Blue">
-                      <label for="pokemonBlue">Blue</label>
-                    </div>
-                    <div class="large-6 columns">
-                      <label>Check these out</label>
-                      <input id="checkbox1" type="checkbox">
-                      <label for="checkbox1">Checkbox 1</label>
-                      <input id="checkbox2" type="checkbox">
-                      <label for="checkbox2">Checkbox 2</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="large-12 columns">
-                      <label>Textarea Label
-                        <textarea placeholder="small-12.columns"></textarea>
-                      </label>
-                    </div>
-                  </div>
-                </form></a></li>
+                  </form>
+                </div></a></li>
           </ul>
         </section>
       </nav>
     </div>
     <div class="row">
-      <div class="small-12 medium-12 large-12 columns">
-        <div class="row">
-          <div class="small-6 medium-6 large-6 columns">
-            <div data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"><i class="fa fa-tags fa-lg"></i>
-              <ul id="drop1" data-dropdown-content="" aria-hidden="true" tabindex="-1" class="f-dropdown">
-                <li><a href="#">This is a link</a></li>
-                <li><a href="#">This is another</a></li>
-                <li><a href="#">Yet another</a></li>
-              </ul>
+      <div class="small-6 medium-6 large-6 columns">
+        <div data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"><i class="fa fa-tags fa-lg"></i>
+          <ul id="drop1" data-dropdown-content="" aria-hidden="true" tabindex="-1" class="f-dropdown">
+            <li><a href="#">Family</a></li>
+            <li><a href="#">Friends</a></li>
+            <li><a href="#">Work</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="small-6 medium-6 large-6 columns text-right sortoptions">
+        <p>
+           
+          Sort by:<a href="#" class="active">Name</a> <a href="#">Date</a> <a href="#">Last Updated</a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <div id="container" data-masonry-options="{ &quot;columnWidth&quot;: 125, &quot;itemSelector&quot;: &quot;.contactentry&quot;, &quot;gutter&quot;: 40 }" class="js-masonry">
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
             </div>
           </div>
-          <div class="small-6 medium-6 large-6 columns">
-            <p>Sort by: </p>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
+          </div>
+          <div class="contactentry">
+            <div class="row">
+              <div class="small-12 columns"><img src="https://placekitten.com/g/200/200"></div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <h6>Felix Winklestein</h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- build:js js/vendor/libraries.min.js-->
     <!-- bower:js-->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="bower_components/get-style-property/get-style-property.js"></script>
+    <script src="bower_components/get-size/get-size.js"></script>
+    <script src="bower_components/eventie/eventie.js"></script>
+    <script src="bower_components/doc-ready/doc-ready.js"></script>
+    <script src="bower_components/eventEmitter/EventEmitter.js"></script>
+    <script src="bower_components/matches-selector/matches-selector.js"></script>
+    <script src="bower_components/outlayer/item.js"></script>
+    <script src="bower_components/outlayer/outlayer.js"></script>
+    <script src="bower_components/masonry/masonry.js"></script>
+    <script src="bower_components/isotope/js/item.js"></script>
+    <script src="bower_components/isotope/js/layout-mode.js"></script>
+    <script src="bower_components/isotope/js/isotope.js"></script>
+    <script src="bower_components/isotope/js/layout-modes/vertical.js"></script>
+    <script src="bower_components/isotope/js/layout-modes/fit-rows.js"></script>
+    <script src="bower_components/isotope/js/layout-modes/masonry.js"></script>
     <!-- endbower-->
     <!-- endbuild-->
     <!-- build:js js/vendor/foundation.min.js-->

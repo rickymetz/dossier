@@ -1,0 +1,11 @@
+.row
+	.small-12.columns
+		#container.js-masonry(data-masonry-options='{ "columnWidth": 125, "itemSelector": ".contactentry", "gutter": 40 }')
+			- for (var x = 0; x < 20; x++)
+				.contactentry
+					.row
+						.small-12.columns
+							img(src="https://placekitten.com/g/200/200")
+					.row
+						.small-12.columns
+							h6 Felix Winklestein

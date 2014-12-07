@@ -1,7 +1,22 @@
 {
   "name": "zf5_project",
   "dependencies": {
-    "foundation": "zurb/bower-foundation",
-    "font-awesome": "~4.2.0" 
-  }
+    "normalize.css": "~3.0.2",
+    "masonry": "~3.2.1",
+    "isotope": "~2.1.0"
+  },
+  "version": "0.0.0",
+  "homepage": "https://github.com/rickymetz/dossier",
+  "authors": [
+    "Rick Metzger <rickymetz@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
 }
