@@ -8129,6 +8129,8 @@ th.hide-for-touch {
 }
 
 #container .contactentry {
+  margin-left: auto;
+  margin-right: auto;
   width: 175px;
   background-color: #e4e4e4;
   float: left;

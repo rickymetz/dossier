@@ -66,6 +66,8 @@ $menu-button-height: $menubar-height/4;
 $contactcard-color: #e4e4e4;
 
 #container .contactentry{
+	margin-left:  auto;
+	margin-right: auto;
 	width: 175px;
 	background-color: $contactcard-color;
 	float: left;
