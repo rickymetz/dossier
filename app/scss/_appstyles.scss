@@ -63,13 +63,13 @@ $menu-button-height: $menubar-height/4;
   margin: 0 auto;
 }
 
+$contactcard-color: #e4e4e4;
+
 #container .contactentry{
-	width: 125px;
-	background-color: #E4E4E4;
-	min-height: 200px;
+	width: 175px;
+	background-color: $contactcard-color;
 	float: left;
-	margin-bottom: 12px;
-	padding: 5px;
+	margin-bottom: 14px;
 	border-radius: 2px;
 
 	-webkit-transition: .25s; /* For Safari 3.1 to 6.0 */
@@ -87,7 +87,58 @@ $menu-button-height: $menubar-height/4;
 		-moz-box-shadow: 0px 2px 10px 0px $aluminum;
 		box-shadow: 0px 2px 10px 0px $aluminum;
 	}
+
+	&:hover .contact-name h6{
+		color: $primary-color;
+	}
+
+	&:hover .contact-card-edit a{
+		color: $aluminum;
+	}
 }
-.contactentry img{
-	border-radius: 2px;
+.contact-img{
+	background-image: url("http://lorempixel.com/175/175/people");
+	height: 175px;
+	width: 175px;
+	border-top-left-radius:2px;
+	border-top-right-radius:2px;
+
 }
+.contact-info-container{
+	padding: 5px;
+	width: 100%
+}
+
+.contact-name {
+	width: 80%;
+	margin-bottom: 20px;
+	float: left;
+	& h6{
+		font-weight: bold;
+		color: $charcoal;
+	}
+}
+.contact-card-edit a{
+	color: $contactcard-color;
+	text-align: right;
+	width: 20%;
+	float: left;
+	&:hover{
+		color: $primary-color;
+	}
+}
+.contact-tags{
+	margin-top: 5px;
+	position: absolute;
+	bottom: 5px;
+	font-size: 10px;
+	color: $aluminum;
+	& a{
+		color: $aluminum;
+		&:hover{
+			color: $primary-color;
+		}
+	}
+}
+
+

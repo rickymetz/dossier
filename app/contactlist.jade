@@ -3,9 +3,18 @@
 		#container.js-masonry(data-masonry-options='{ "itemSelector": ".contactentry", "gutter": 15, "isFitWidth": true }')
 			- for (var x = 0; x < 20; x++)
 				.contactentry.centered
-					.row
-						.small-12.columns
-							img(src="http://lorempixel.com/200/200/people")
-					.row
-						.small-12.columns.contactentry-text-area
-							h6 John Smith
+					.contact-parent
+						.contact-img
+						.contact-info-container
+							.contact-name
+								h6 John Smith
+							.contact-card-edit
+								a(href='#', data-reveal-id='editContactModal')
+									i.fa.fa-pencil.fa-fw.tagdropdown
+									include editcontactmodal
+							.contact-tags
+								i.fa.fa-tags.fa-fw.tagdropdown
+								| 
+								a Friends
+								| 
+								a Family
