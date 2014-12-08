@@ -27,19 +27,67 @@ $menu-button-height: $menubar-height/4;
 }
 
 // Sort Options
+.sortsandfilters{
+	margin-top: 15px;
+}
 .sortoptions a{
 	color: grey;
 	margin-left: 1em;
+	-webkit-transition: .25s; /* For Safari 3.1 to 6.0 */
+    transition: .25s;
+	&:hover{
+		color: $primary-color;
+		cursor: pointer;
+	}
 }
 .sortoptions .active{
 	border-bottom: 1px solid grey;
+	-webkit-transition: .25s; /* For Safari 3.1 to 6.0 */
+    transition: .25s;
+	&:hover{
+		border-bottom: 1px solid $primary-color;
+		cursor: pointer;
+	}
+}
+.tagdropdown{
+	-webkit-transition: .25s; /* For Safari 3.1 to 6.0 */
+    transition: .25s;
+	&:hover{
+		color:$primary-color;
+		cursor: pointer;
+	}
 }
 
 // contact list
+#container{
+  margin: 0 auto;
+}
+
 #container .contactentry{
-	max-width: 150px;
-	background-color: pink;
-	min-height: 275px;
+	width: 125px;
+	background-color: #E4E4E4;
+	min-height: 200px;
 	float: left;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
+	padding: 5px;
+	border-radius: 2px;
+
+	-webkit-transition: .25s; /* For Safari 3.1 to 6.0 */
+    transition: .25s;
+
+	&:hover{
+		border-bottom:  3px $primary-color solid;
+		-ms-transform: translate(0px,-5px); /* IE 9 */
+		-webkit-transform: translate(0px,-5px); /* Chrome, Safari, Opera */
+		transform: translate(0px,-5px);
+
+		cursor: pointer;
+
+		-webkit-box-shadow: 0px 2px 10px 0px $aluminum;
+		-moz-box-shadow: 0px 2px 10px 0px $aluminum;
+		box-shadow: 0px 2px 10px 0px $aluminum;
+	}
+}
+.contactentry img{
+	border-radius: 2px;
 }

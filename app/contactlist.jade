@@ -1,11 +1,11 @@
 .row
 	.small-12.columns
-		#container.js-masonry(data-masonry-options='{ "columnWidth": 125, "itemSelector": ".contactentry", "gutter": 40 }')
+		#container.js-masonry(data-masonry-options='{ "itemSelector": ".contactentry", "gutter": 15, "isFitWidth": true }')
 			- for (var x = 0; x < 20; x++)
-				.contactentry
+				.contactentry.centered
 					.row
 						.small-12.columns
-							img(src="https://placekitten.com/g/200/200")
+							img(src="http://lorempixel.com/200/200/people")
 					.row
-						.small-12.columns
-							h6 Felix Winklestein
+						.small-12.columns.contactentry-text-area
+							h6 John Smith

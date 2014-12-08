@@ -1,7 +1,7 @@
-div.row
-    div.small-6.medium-6.large-6.columns
+div.row.sortsandfilters
+    div.small-2.medium-2.large-2.columns
         div(data-dropdown='drop1', aria-controls='drop1', aria-expanded='false')
-            i.fa.fa-tags.fa-lg
+            i.fa.fa-tags.fa-lg.tagdropdown
             ul#drop1.f-dropdown(data-dropdown-content='', aria-hidden='true', tabindex='-1')
                 li
                     a(href='#') Family
@@ -9,7 +9,7 @@ div.row
                     a(href='#') Friends
                 li
                     a(href='#') Work
-    div.small-6.medium-6.large-6.columns.text-right.sortoptions
+    div.small-10.medium-10.large-10.columns.text-right.sortoptions
         p 
             | Sort by:
             a.active(href='#') Name
