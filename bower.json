@@ -3,7 +3,10 @@
   "dependencies": {
     "normalize.css": "~3.0.2",
     "masonry": "~3.2.1",
-    "isotope": "~2.1.0"
+    "isotope": "~2.1.0",
+    "foundation": "~5.4.7",
+    "font-awesome": "~4.2.0",
+    "fastclick": "~1.0.3"
   },
   "version": "0.0.0",
   "homepage": "https://github.com/rickymetz/dossier",
